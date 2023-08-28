@@ -1,0 +1,199 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --font-principal:'Poppins', sans-serif;
+
+    background:#20a7fc;
+    --cor-secundaria:#ffffff;
+    --cor-terciaria:#36320A;
+    --branco:#FFFFFF;
+    --cinza:#ffffff;
+    --preto:#000;
+}
+
+body{
+    background: #20a7fc;
+    font-family: var(--font-principal);
+}
+
+.container{
+    background: #20a7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 944px;
+    height: 555px;
+    margin: 128px auto;
+}
+
+/* LOGIN ACCOUNT  */
+
+.container-bem__vindo{
+    padding-top: 43px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--cor-terciaria);
+    width: 304px;
+    height: 555px;
+    border: none;
+    border-radius: 16px 0 0 16px;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container-content-bem__vindo{
+    padding: 40px;
+}
+
+.container-content-bem__vindo img{
+    height: 81px;
+    border-left: 1px solid;
+    border-width: 5px;
+    border-color: var(--cinza);
+}
+
+.container__titulo{
+    color: var(--branco);
+    font-size: 26px;
+    font-weight: 700;
+}
+.container__subtitulo{
+    color: var(--branco);
+    font-size: 23px;
+}
+
+.button_enter{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 42px;
+    background: transparent;
+    width: 232px;
+    height: 70px;
+    border-radius: 30px;
+    border: 4px solid var(--branco);
+    cursor: pointer;
+}
+
+.container-content-bem__vindo span{
+    padding-top: 12px;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    color: var(--branco);
+}
+
+/* CREATE ACCOUT */
+
+.container-cria__conta{
+    background: var(--cor-secundaria);
+    width: 944px;
+    height: 555px;
+    border: none;
+    border-radius: 0 16px 16px 0;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.cria-conta__titulo{
+    padding-top: 50px;
+    color: var(--preto);
+    font-size: 32px;
+    font-weight: 800;
+}
+.cria-conta__texto{
+    color: var(--preto);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.formularios{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+
+.formulario-recebe__user{
+    background-image: url(../img/user.svg);
+    background-repeat: no-repeat;
+}
+.formulario-recebe__email{
+    background-image: url(./email.svg);
+    background-repeat: no-repeat;
+}
+.formulario-recebe__senha{
+    background-image: url(./password.svg);
+    background-repeat: no-repeat;
+}
+
+.formulario-dados{
+    color: rgb(87, 87, 87);
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 480px;
+    height: 60px;
+    border: none;
+    border-radius: 16px;
+    background: var(--cor-principal);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.formulario-dados::placeholder{
+    padding-left: 10px;
+}
+    
+
+.button_cadaster{
+    background: var(--cor-terciaria);
+    font-size: 24px;
+    font-weight: 700; 
+    text-transform: uppercase;
+    margin-top: 5px;
+    width: 232px;
+    height: 70px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* RODAPE */
+
+.rodape{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 834px){
+
+    .container{
+        width: 750px;
+    }
+
+    .container-content-bem__vindo{
+        padding: 0px 40px 40px 40px;
+    }
+
+    .formulario-dados{
+        width: 40vh;
+        height: 52px;
+    }
+
+}

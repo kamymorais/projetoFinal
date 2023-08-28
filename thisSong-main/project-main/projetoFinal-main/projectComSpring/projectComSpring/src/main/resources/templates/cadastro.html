@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{CSS\style-cadastro.css}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <title>This Song - Cadastro</title>
+</head>
+<body style="background: #20a7fc;">
+    <div class="container">
+        <div class="container-bem__vindo">
+            <div class="container-content-bem__vindo">
+                <img th:src="@{image/guitarrista.png}" alt="">
+                <h2 class="container__titulo">Seja bem vindo!</h2>
+                <p class="container__subtitulo">Acesse sua conta agora mesmo.</p>
+                
+                <a class="btn btn-primary button_enter" style="padding-top: 22px;" th:href="@{entrar}">entrar</a>
+                <a href="" style="margin-left: 50px;">Esqueci minha senha</a>
+            </div>
+        </div>
+
+        <div class="container-cria__conta">
+            <h2 class="cria-conta__titulo">Crie sua conta</h2>
+
+                <form th:object="${usuario}" action="/salvarUsuario" th:action="@{/salvarUsuario}" method="POST" >
+
+                    <div class="formularios needs-validation">
+                        <p>
+                            <input type="text" class="formulario-recebe__user formulario-dados" th:field="*{nome}" placeholder="Nome"  required>
+                        </p>
+                        <p>
+                            <input  type="email" name="email" required class="formulario-dados" th:field="*{email}" placeholder="Email">
+                        </p>
+                        <div id="msgemail"></div>
+                        <p>
+                            <input type="password" class="formulario-recebe__senha formulario-dados" th:field="*{senha}" placeholder="Senha" required>
+                        </p>
+
+                        <button class="btn btn-outline-primary button_cadaster" type="submit">cadastrar</button>
+                      
+                    </div>
+
+                    <div class="rodape">
+                    <p>This Song&copy;</p>
+                    </div>
+
+   </form>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

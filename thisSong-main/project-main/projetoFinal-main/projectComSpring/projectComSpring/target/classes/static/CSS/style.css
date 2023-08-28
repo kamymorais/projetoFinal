@@ -1,0 +1,135 @@
+    .cabecalho {
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        background-color:rgb(26, 140, 201);
+        height: 100px;
+    }
+    .cabecalho h4{
+        font-size: 50px;
+      margin: 0 auto;
+    }
+    .cabecalho img{
+        margin-left: 80px;
+        width: 80px;
+        height: 60px;
+    }
+
+  
+
+    .song{
+        color: white;
+        font-size: 100px;
+    }
+
+    .container .logo img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .imagem img{
+        
+        max-width:400px;
+        max-height:250px;
+        width: auto;
+        height: auto;
+    }
+
+    #valorDoInput{
+        color: white;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+    }
+    
+    /* .buttons {
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 20px;
+    
+    } */
+
+    .buttons button {     
+        height: 50px;
+        width: 200px;
+    
+    }
+
+    .content-botoes{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center; 
+        gap: 200px;
+        
+        
+      
+    }
+
+    .bts-1{
+        margin-bottom: 50px;
+    } 
+
+    /*TRISTANA / PONTOS*/
+
+    .bts{
+        margin-left: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-tristana{
+       align-items: center;
+    }  
+   
+    .container-content{
+        padding: 5px 15px;
+        width: 150px;
+        height: 50px;
+        border: 1px solid #0dcaf0;
+        border-radius: 12px;
+        display: flex;
+        font-size: 25px;
+    }
+
+    .content-coracao{
+        align-items: center;
+        font-size: 32px;
+        color: red;
+        position: relative;
+        margin-left: 5px;
+        left: 8%;
+        bottom: 5px;
+    
+    }
+    
+    .content-pontuacao{
+        font-size: 21px;
+        color: white;
+        position: relative;
+        left: -10%;
+        bottom: -1px;
+    }
+
+    /*BUTÕES*/
+
+    .pontos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    #div-title{
+        display: block;
+        margin-top: 250px;
+       
+    }
+    #title{
+        color: white; 
+        font-size: 200px
+    }
+
+   
+
+ 
